@@ -1,0 +1,12 @@
+char **init(int size);
+int size(char *str);
+void print_box(char **box);
+void dfs(int row, int col, char **box, char *str);
+int check_col(int col, int value, char **box);
+int check_row(int row, int value, char **box);
+int judge_rightrow(char pivot, int row, char **box);
+int judge_leftrow(char pivot, int row, char **box);
+int judge_downcol(char pivot, int col, char **box);
+int judge_upcol(char pivot, int col, char **box);
+int judge(char **box, char *str);
+void free_box(char **box);
